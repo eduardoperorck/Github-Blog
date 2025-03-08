@@ -1,11 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faUsers, faBuilding } from "@fortawesome/free-solid-svg-icons";
+import { ProfileContainer, ProfileContent, ProfileImage } from "./styles";
+
 export function Profile () {
     return (
-        <>
-            <div>
-                <img src="" alt="" />
-            </div>
+        <ProfileContainer>
+            <ProfileImage>
+                <img src="https://avatars.githubusercontent.com/u/57379069?v=4" alt="" />
+            </ProfileImage>
 
-            <div>
+            <ProfileContent>
                 <div>
                     <h1>Eduardo Perorck</h1>
                     <a href="">Github</a>
@@ -16,11 +21,22 @@ export function Profile () {
                 </div>
 
                 <div>
-                    <span>Github</span>
-                    <span>Rocketseat</span>
-                    <span>32 seguidores</span>
+                    <a href="">
+                        <FontAwesomeIcon icon={faGithub} />
+                        Github
+                    </a>
+
+                    <a href="">
+                        <FontAwesomeIcon icon={faBuilding} />
+                        Rocketseat
+                    </a>
+
+                    <a href="">
+                        <FontAwesomeIcon icon={faUsers} />
+                        32 seguidores
+                    </a>
                 </div>
-            </div>
-        </>
+            </ProfileContent>
+        </ProfileContainer>
     );
 }

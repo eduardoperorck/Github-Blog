@@ -1,7 +1,9 @@
+import { InputForm } from "./styles";
+
 export function SearchForm () {
     return (
         <>
-            <input type="text" />
+            <InputForm type="text" />
         </>
     );
 }
